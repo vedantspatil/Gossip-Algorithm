@@ -5,4 +5,10 @@ The objective of this project is to evaluate the convergence behavior of Gossip-
 * Ahan Fernandez 8106-4926  fernandez.ah@ufl.edu
 * Omkar Bhabad  4227-7898  omkar.bhabad@ufl.edu
 * Rushang Chiplunkar  6395-1956  chiplun.rushangs@ufl.edu 
+# Steps to run:
+Run following commands in your console.
 
+To Run 'Server'###
+cd Server
+dotnet run {nodecount} {topology} {algorithm} or dotnet run
+for e.g dotnet run 1000 line gossip
