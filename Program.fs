@@ -2,7 +2,7 @@
 
 open Akka
 open System
-open Topologies
+open TopologyGenerators
 open Schedulers
 open Akka.Actor
 open Akka.Actor.Scheduler
@@ -57,15 +57,15 @@ let find_neighbours (pool:list<IActorRef>, topology:string, myActorIndex:int) =
     let mutable neighbours = []
     match topology with 
     | "line" ->
-        neighbours <- Topologies.findLineNeighboursFor(pool, myActorIndex, numNodes)
+        neighbours <- TopologyGenerators.generateLinear(pool, myActorIndex)
     | "2D" | "2d" | "imp2D" | "imp2d" ->
         let side = numNodes |> float |> sqrt |> int
-        neighbours <- Topologies.find2DNeighboursFor(pool, myActorIndex, side, numNodes, isImproper)
+        neighbours <- TopologyGenerators.generate2DGrid(pool, myActorIndex, side, isImproper)
     | "3D" | "3d" | "imp3D" | "imp3d" ->
         let side = numNodes |> float |> Math.Cbrt |> int
-        neighbours <- Topologies.find3DNeighboursFor(pool, myActorIndex, side, (side * side), numNodes, isImproper)
+        neighbours <- TopologyGenerators.generate3DGrid(pool, myActorIndex, side, (side * side), numNodes, isImproper)
     | "full" ->
-        neighbours <- Topologies.findFullNeighboursFor(pool, myActorIndex, numNodes)
+        neighbours <- TopologyGenerators.findFullNetworkFor(pool, myActorIndex, numNodes)
     | _ -> ()
     neighbours
 

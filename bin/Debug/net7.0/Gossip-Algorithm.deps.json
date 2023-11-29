@@ -10,7 +10,7 @@
         "dependencies": {
           "Akka": "1.5.14",
           "Akka.FSharp": "1.4.25",
-          "FSharp.Core": "7.0.400"
+          "FSharp.Core": "8.0.100"
         },
         "runtime": {
           "Gossip-Algorithm.dll": {}
@@ -35,7 +35,7 @@
       "Akka.FSharp/1.4.25": {
         "dependencies": {
           "Akka": "1.5.14",
-          "FSharp.Core": "7.0.400",
+          "FSharp.Core": "8.0.100",
           "FSharp.Quotations.Evaluator": "2.1.0",
           "FsPickler": "5.3.2"
         },
@@ -46,11 +46,11 @@
           }
         }
       },
-      "FSharp.Core/7.0.400": {
+      "FSharp.Core/8.0.100": {
         "runtime": {
           "lib/netstandard2.1/FSharp.Core.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.4.23.37403"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.1.23.52306"
           }
         },
         "resources": {
@@ -97,7 +97,7 @@
       },
       "FSharp.Quotations.Evaluator/2.1.0": {
         "dependencies": {
-          "FSharp.Core": "7.0.400"
+          "FSharp.Core": "8.0.100"
         },
         "runtime": {
           "lib/netstandard2.0/FSharp.Quotations.Evaluator.dll": {
@@ -108,7 +108,7 @@
       },
       "FsPickler/5.3.2": {
         "dependencies": {
-          "FSharp.Core": "7.0.400",
+          "FSharp.Core": "8.0.100",
           "System.Reflection.Emit.Lightweight": "4.3.0"
         },
         "runtime": {
@@ -322,12 +322,12 @@
       "path": "akka.fsharp/1.4.25",
       "hashPath": "akka.fsharp.1.4.25.nupkg.sha512"
     },
-    "FSharp.Core/7.0.400": {
+    "FSharp.Core/8.0.100": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-SZR1jcjcrdhjRObN/U16nI+RyvKBgg0zq8Pt2KAorDkvW0cXSjX4qKDNX+LpZaKZRA5QR9StHZ2mhT5VI/QSxw==",
-      "path": "fsharp.core/7.0.400",
-      "hashPath": "fsharp.core.7.0.400.nupkg.sha512"
+      "sha512": "sha512-ZOVZ/o+jI3ormTZOa28Wh0tSRoyle1f7lKFcUN61sPiXI7eDZu8eSveFybgTeyIEyW0ujjp31cp7GOglDgsNEg==",
+      "path": "fsharp.core/8.0.100",
+      "hashPath": "fsharp.core.8.0.100.nupkg.sha512"
     },
     "FSharp.Quotations.Evaluator/2.1.0": {
       "type": "package",

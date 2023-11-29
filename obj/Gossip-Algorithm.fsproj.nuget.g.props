@@ -4,17 +4,17 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/vedantpatil/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/vedantpatil/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/ahanfz/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/ahanfz/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.7.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.8.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/Users/vedantpatil/.nuget/packages/" />
+    <SourceRoot Include="/Users/ahanfz/.nuget/packages/" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/vedantpatil/.nuget/packages/fsharp.core/7.0.400</PkgFSharp_Core>
-    <PkgAkka Condition=" '$(PkgAkka)' == '' ">/Users/vedantpatil/.nuget/packages/akka/1.5.14</PkgAkka>
-    <PkgAkka_FSharp Condition=" '$(PkgAkka_FSharp)' == '' ">/Users/vedantpatil/.nuget/packages/akka.fsharp/1.4.25</PkgAkka_FSharp>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/Users/ahanfz/.nuget/packages/fsharp.core/8.0.100</PkgFSharp_Core>
+    <PkgAkka Condition=" '$(PkgAkka)' == '' ">/Users/ahanfz/.nuget/packages/akka/1.5.14</PkgAkka>
+    <PkgAkka_FSharp Condition=" '$(PkgAkka_FSharp)' == '' ">/Users/ahanfz/.nuget/packages/akka.fsharp/1.4.25</PkgAkka_FSharp>
   </PropertyGroup>
 </Project>
