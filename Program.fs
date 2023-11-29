@@ -230,12 +230,6 @@ let MainActor (mailbox:Actor<_>) =
 
             | GossipActorStoppedTransmitting(actorName) ->
                 actors_done <- actors_done + 1
-                (*printfn "%s Terminated | Total terminated = %d" actorName actorsDone
-                if actorsDone = numNodes then 
-                    printfn "\n SAB TERMINATED\n"
-                    timer.Stop()
-                    printfn "Total time = %dms" timer.ElapsedMilliseconds
-                    Environment.Exit(0)*)
 
             | IReceivedRumour(actorIndex) ->
                 actors_that_know <- actors_that_know + 1
